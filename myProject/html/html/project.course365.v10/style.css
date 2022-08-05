@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.slide-body {
+    padding-top: 60px;
+}
+.h1-tittle {
+    color: white;
+    margin-left: 120px;
+    margin-top: 170px;
+}
+.p-tag {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+.button {
+    margin-left: 120px;
+}
+.img-slide-content {
+    height: 100%;
+}
+.Angular {
+    color: blue;
+}
+.img1 img{
+    position: relative;
+    display: block;
+    z-index: 1;
+    border-radius: 50%;
+    width: 50px;
+    height: 53px;
+}
+.icon-1 {
+    margin-top: 22px;
+    margin-left: 50px;
+}
+.icon-2 {
+    margin-top: 21px;
+    margin-left: 30px;
+}
+.popular-tittle {
+    margin-top: 100px;
+}
+.trending-tittle {
+    margin-top: 100px;
+}
+.footer-content {
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.footer-link {
+    margin-left: 30px;
+}
+.footer-link1 {
+    margin-left: 165px;
+}
+.footer-div {
+    margin-top: 28px;
+}

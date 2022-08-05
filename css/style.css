@@ -1,0 +1,168 @@
+#flag_VN{
+    width: 3%;
+}
+.content_cv {
+    background-image: url("../images//bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 590px; 
+    margin-top: 54px;
+}
+.content_cv11 {
+    background-image: url("../images//bg.jpg");
+    background-size: cover;
+    height: 800px; 
+    margin-top: 54px;
+}
+.content_cv111 {
+    background-image: url("../images//bg.jpg");
+    background-size: cover;
+    height: 650px; 
+    margin-top: 54px;
+}
+.content_cv1 {
+    color: white;
+}
+.div_welcome {
+    margin-top: 270px;
+}
+.footer {
+    height: 100px;
+    background-color: #363636;
+    color: white;
+}
+.footer3 {
+    
+    height: 100px;
+    background-color: #363636;
+    color: white;
+}
+.icon1 {
+    color: white;
+}
+.footer1 {
+    margin-top: 20px;
+}
+.footer2 {
+    margin-top: 50px;
+}
+
+.info_profile {
+    font-size: 120%;
+}
+.div_welcome1 {
+    margin-top: 170px;
+}
+.content_cv2 {
+    margin-left: 80px;
+    color: white;
+    font-size: 120%;
+}
+.div_info {
+    font-size: 150%;
+    margin-top: 160px;
+    font-weight: 400;
+}
+.h3_skill {
+    color: white;
+    text-align: center;
+    margin-left: 430px;
+}
+.gitlab {
+    margin-top: 13px;
+}
+.trello {
+    margin-top: 12px;
+}
+.img_profile {
+    margin-left: 80px;
+}
+/* Tablet: width >= 740px and width < 1024 */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .div_welcome {
+        position: relative;
+        bottom: 140px;
+        left: 30px;
+    }
+    .btn_myProject {
+        position: relative;
+        left: 170px;
+        bottom: 38px;
+        
+    }
+    .email{
+        position: relative;
+        bottom: 28px;
+    }
+    .phone{
+        position: relative;
+        bottom: 28px;
+        left: 15px;
+    }
+    .span_email {
+        position: relative;
+        top: 4px;
+    }
+    .span_phone {
+        position: relative;
+        top: 30px;
+        right: 70px;
+    }
+    .img_profile {
+        position: relative;
+        right: 70px;
+    }
+}
+/* Moblie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .div_welcome {
+        position: relative;
+        bottom: 160px;
+        left: 150px;
+    }
+    .btn_profile {
+        position: relative;
+        right: 60px;
+    }
+    .btn_skill{
+        position: relative;
+        right: 60px;
+    }
+    .btn_myProject {
+        position: relative;
+        bottom: 38px;
+        left: 110px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+    .name_contact{
+        font-size: 15px;
+    }
+    .email{
+        position: relative;
+        font-size: 15px;
+        right: 30px;
+        bottom: 28px;
+    }
+    .span_email {
+        position: relative;
+        top: 4px;
+    }
+    .phone{
+        font-size: 15px;
+        position: relative;
+        bottom: 28px;
+        left: 15px;
+    }
+    .span_phone {
+        position: relative;
+        top: 5px;
+        right: 1px;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}
+
+

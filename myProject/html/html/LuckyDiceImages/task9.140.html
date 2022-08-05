@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img-play-casino" width="30%" src="people-playing-casino.jpg">
+    <h1 id="h1-tittle">Chào mừng đến với Lucky Dice Casino</h1>
+    <img id="img-dice" width="10%" src="dice.png"> 
+    <br>
+    <button id="btn-throw" onclick="onBtnThrowClick(); getRandomNumber()" >Ném</button>
+    <h2 id="h2-tittle" style="display: none;" >message</h2>
+</body>
+<script>
+     /*** REGION 1 - Global variables - Vùng khai báo biến, hằng số, tham số TOÀN CỤC */
+
+     /*** REGION 2 - Vùng gán / thực thi sự kiện cho các elements */
+
+     /*** REGION 3 - Event handlers - Vùng khai báo các hàm xử lý sự kiện */
+     
+    function onPageLoading() {
+        "use strict"
+        var vImgPlayCasino=document.getElementById("img-play-casino");
+        console.log(vImgPlayCasino.id);
+        console.log(vImgPlayCasino.src);
+
+        var vH1Tittle=document.getElementById("h1-tittle");
+        console.log(vH1Tittle.id);
+        console.log(vH1Tittle.innerHTML);
+
+        var vImgDice=document.getElementById("img-dice");
+        console.log(vImgDice.id);
+        console.log(vImgDice.src);
+
+        var vBtnThrow=document.getElementById("btn-throw");
+        console.log(vBtnThrow.id);
+        console.log(vBtnThrow.innerHTML);
+
+        var vH2Tittle=document.getElementById("h2-tittle");
+        console.log(vH2Tittle.id);
+        console.log(vH2Tittle.innerHTML);
+    }
+    onPageLoading();
+
+    function onBtnThrowClick() {
+        "use strict"
+        console.log("Tung xúc xắc");
+        var random = getRandomNumber();
+        console.log(random);
+        changeDiceImage(random);
+        changeMessage(random);
+    }
+    /*** REGION 4 - Common funtions - Vùng khai báo hàm dùng chung trong toàn bộ chương trình*/
+
+    function getRandomNumber() {
+        return Math.floor(Math.random()*6 + 1);       
+    }
+
+    function changeDiceImage(vRandomNumber) {
+        "use strict"
+        var vImageDice=document.getElementById("img-dice")
+        switch(vRandomNumber) {
+            case 1:
+                vImageDice.src="1.png";
+                break;
+            case 2: 
+                vImageDice.src="2.png";
+                break;
+            case 3: 
+                vImageDice.src="3.png";
+                break;
+            case 4:
+                vImageDice.src="4.png";
+                break;
+            case 5:  
+                vImageDice.src="5.png";
+                break;
+            case 6: 
+                vImageDice.src="6.png";  
+                break;          
+        }
+    }
+
+    function changeMessage (vRandomNumber) {
+        "use strict"
+        var vH2Tittle=document.getElementById("h2-tittle");
+        if(vRandomNumber<4) {
+        vH2Tittle.innerHTML="Cảm ơn bạn. Hãy cố gắng lần sau nhé!";
+        vH2Tittle.style.display="block";
+        vH2Tittle.style.color="blue";
+        }
+        else {
+        vH2Tittle.innerHTML="Chúc mừng bạn! Làm ván nữa nhé!";
+        vH2Tittle.style.display="block";
+        vH2Tittle.style.color="blue";
+        }
+    }
+
+    
+    
+</script>
+</html>
